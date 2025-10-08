@@ -1,0 +1,10 @@
+{
+  "name": "volunteerhub",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm --prefix backend i && npm --prefix frontend i",
+    "dev": "node -e \"require('child_process').spawn('npm', ['run','dev','--prefix','backend'], {stdio:'inherit', shell:true}); require('child_process').spawn('npm', ['run','dev','--prefix','frontend'], {stdio:'inherit', shell:true});\""
+  }
+}
+
+
